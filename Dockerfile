@@ -10,6 +10,10 @@ COPY . /app
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Set the environment variable for Flask
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=production
+
 # Copy the rest of the application code into the container
 COPY . .
 

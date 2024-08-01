@@ -1,0 +1,27 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysql
+    networks:
+      - slam-network
+
+
+ mysql:
+   image: mysql:5.7
+   environment:
+     MYSQL_ROOT_PASSWORD: aWelcome@123
+      MYSQL_DATABASE: user_info
+      MYSQL_USER: amittashok
+      MYSQL_PASSWORD: aWelcome@123
+      ports:
+        - "3306:3306"
+      networks:
+        - slam-network
+
+      networks:
+        slam-network:
+          driver: bridge 
