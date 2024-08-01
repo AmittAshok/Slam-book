@@ -49,8 +49,8 @@ Git (optional, for cloning the repository)
     
 4.Interact with the app:
 
-      Visit http://localhost to see the frontend. You can submit new messages using the form.
-      Visit http://localhost:5000/insert_sql to insert a message directly into the messages table via an SQL query.
+      Visit http://localhost to see the frontend. # add new friend details here
+      Visit http://localhost:5000/insert_sql      # insert a message directly into the messages table via an SQL query.
       
 5.Cleaning Up
 To stop and remove the Docker containers, press Ctrl+C in the terminal where the containers are running, or use the following command:
