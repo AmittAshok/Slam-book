@@ -9,19 +9,25 @@ services:
     networks:
       - slam-network
 
-
- mysql:
-   image: mysql:5.7
-   environment:
-     MYSQL_ROOT_PASSWORD: aWelcome@123
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: aWelcome@123
       MYSQL_DATABASE: user_info
       MYSQL_USER: amittashok
       MYSQL_PASSWORD: aWelcome@123
-      ports:
-        - "3306:3306"
-      networks:
-        - slam-network
+    ports:
+      - "3306:3306"
+    networks:
+      - slam-network
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./message.sql:/docker-entrypoint-initdb.d/message.sql
 
-      networks:
-        slam-network:
-          driver: bridge 
+networks:
+  slam-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+
