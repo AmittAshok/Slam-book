@@ -1,6 +1,6 @@
 # Slambook App- Two Tier appliaction 
 
-This is a simple Flask app that interacts with a MySQL database. The app allows users to submit messages, which are then stored in the database and displayed on the frontend.
+This is a simple SlamBook project that allows users to collect and store information about their friends, such as name, location, and hobbies. This project emulates the traditional college slambook, which was often passed around among friends for filling out personal details and fun facts.
 
 # Prerequisites
 Before you begin, make sure you have the following installed:
@@ -10,12 +10,11 @@ Git (optional, for cloning the repository)
 
 # Setup
   1.Clone this repository (if you haven't already):
-
-  2.git clone https://github.com/your-username/your-repo-name.git
   
-          cd your-repo-name
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your_rep_name
         
-  3.Create a .env file in the project directory to store your MySQL environment variables:
+  2.Create a .env file in the project directory to store your MySQL environment variables:
   
         touch .env
         Open the .env file and add your MySQL configuration:
@@ -56,15 +55,8 @@ Git (optional, for cloning the repository)
 5.Cleaning Up
 To stop and remove the Docker containers, press Ctrl+C in the terminal where the containers are running, or use the following command:
 
-docker-compose down
-To run this two-tier application using without docker-compose
-
-First create a docker image from Dockerfile
-
-      docker build -t slambook
-Now, make sure that you have created a network using following command
-
-    docker network create slam-network
+    docker-compose down
+    
 # Notes
 
 This is a basic setup for demonstration purposes. In a production environment, you should follow best practices for security and performance.
