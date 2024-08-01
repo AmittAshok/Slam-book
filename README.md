@@ -2,11 +2,21 @@
 
 This is a simple SlamBook project that allows users to collect and store information about their friends, such as name, location, and hobbies. This project emulates the traditional college slambook, which was often passed around among friends for filling out personal details and fun facts.
 
+# Architecture
+The application consists of two tiers:
+
+Front-End: Provides a user interface where users can submit their information.
+Back-End: Handles data storage and retrieval using a MySQL database.
+
+# Features
+Collects user information including name, date of birth, blood group, location, and hobbies.
+Stores the collected data in a MySQL database.
+
 # Prerequisites
 Before you begin, make sure you have the following installed:
-
-Docker
-Git (optional, for cloning the repository)
+  Docker
+  Git (optional, for cloning the repository)
+  Docker compose
 
 # Setup
   1.Clone this repository (if you haven't already):
