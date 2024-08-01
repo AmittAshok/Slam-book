@@ -1,4 +1,4 @@
-# Slambook App- Two Tier appliaction 
+# Slambook App - Two Tier appliaction 
 
 This is a simple SlamBook project that allows users to collect and store information about their friends, such as name, location, and hobbies. This project emulates the traditional college slambook, which was often passed around among friends for filling out personal details and fun facts.
 
