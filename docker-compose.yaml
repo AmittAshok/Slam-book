@@ -8,6 +8,9 @@ services:
       - mysql
     networks:
       - slam-network
+    volumes:
+      - slambook-vol:/var/lib
+
 
   mysql:
     image: mysql:5.7
@@ -30,4 +33,5 @@ networks:
 
 volumes:
   mysql_data:
+  slambook-vol:
 
