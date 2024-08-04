@@ -3,7 +3,7 @@
 This is a simple SlamBook project that allows users to collect and store information about their friends, such as name, location, and hobbies. This project emulates the traditional college slambook, which was often passed around among friends for filling out personal details and fun facts.
 
 # Architecture
-The application consists of two tiers:
+The application consists of two tiers of :
 
 Front-End: Provides a user interface where users can submit their information.
 Back-End: Handles data storage and retrieval using a MySQL database.
