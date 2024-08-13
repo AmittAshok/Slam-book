@@ -16,11 +16,6 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
-    - name: Cache Docker layers
-      uses: docker/cache-action@v2
-      with:
-        path: Slam-book/Dockerfile
-
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
       with:
@@ -34,6 +29,8 @@ jobs:
         file: Slam-book/Dockerfile
         push: true
         tags: amittashok/slambook-cicd:latest
+        cache-from: type=registry,ref=amittashok/slambook-cicd:cache
+        cache-to: type=registry,ref=amittashok/slambook-cicd:cache,mode=max
 
     - name: Log out from Docker Hub
       run: docker logout
